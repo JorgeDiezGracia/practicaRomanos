@@ -169,6 +169,16 @@ public class ConversionARomanosTest {
         Assert.assertEquals("DCCCXCIII", numero);
     }
 
+    @Test
+    public void testConversion999(){
+        numero = conversionARomanos.conversionNumero(999);
+        Assert.assertEquals("CMXCIX", numero);
+    }
 
+    @Test
+    public void testConversion1000(){
+        numero = conversionARomanos.conversionNumero(1000);
+        Assert.assertEquals("M", "CX");
+    }
 
 }
