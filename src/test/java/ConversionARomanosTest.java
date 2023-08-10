@@ -32,5 +32,10 @@ public class ConversionARomanosTest {
         numero = conversionARomanos.conversionNumero(3);
         Assert.assertEquals("III", numero);
     }
+    @Test
+    public void testConversion4(){
+        numero = conversionARomanos.conversionNumero(4);
+        Assert.assertEquals("IV", numero);
+    }
 
 }
