@@ -163,6 +163,11 @@ public class ConversionARomanosTest {
         Assert.assertEquals("DLXVI", numero);
     }
 
+    @Test
+    public void testConversion893(){
+        numero = conversionARomanos.conversionNumero(893);
+        Assert.assertEquals("DCCCXCIII", numero);
+    }
 
 
 
