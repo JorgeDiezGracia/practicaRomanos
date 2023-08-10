@@ -178,7 +178,7 @@ public class ConversionARomanosTest {
     @Test
     public void testConversion1000(){
         numero = conversionARomanos.conversionNumero(1000);
-        Assert.assertEquals("M", "CX");
+        Assert.assertEquals("M", numero);
     }
 
 }
