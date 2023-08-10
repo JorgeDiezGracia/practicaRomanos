@@ -204,5 +204,11 @@ public class ConversionARomanosTest {
         numero = conversionARomanos.conversionNumero(2700);
         Assert.assertEquals("MMDCC", numero);
         }
+
+        @Test
+    public void testConversion3000(){
+        numero = conversionARomanos.conversionNumero(3000);
+        Assert.assertEquals("MMM", numero);
+        }
     }
 
