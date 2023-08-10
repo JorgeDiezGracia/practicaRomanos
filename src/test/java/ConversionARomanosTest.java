@@ -126,4 +126,10 @@ public class ConversionARomanosTest {
         numero = conversionARomanos.conversionNumero(101);
         Assert.assertEquals("CI", numero);
     }
+
+    @Test
+    public void testConversion122(){
+        numero = conversionARomanos.conversionNumero(122);
+        Assert.assertEquals("CXXII", numero);
+    }
 }
