@@ -3,9 +3,8 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.Before;
 
-
+// El objetivo de los tests es comprobar que el método ConversionARomanos arroja correctamente los valores asignados en los arrays
 public class ConversionARomanosTest {
-
     ConversionARomanos conversionARomanos;
     String numero;
 
@@ -15,6 +14,7 @@ public class ConversionARomanosTest {
         numero = "";
     }
 
+    //Con los 9 primeros test compruebo los elementos del array numerosUnidades
     @Test
     public void testConversion(){
         numero = conversionARomanos.conversionNumero(1);
@@ -66,7 +66,8 @@ public class ConversionARomanosTest {
         numero = conversionARomanos.conversionNumero(9);
         Assert.assertEquals("IX", numero);
     }
-
+// Desde el test10 al test77 compruebo elementos del array numeroDecenas
+    // En tests de otros arrays comprobaré el resto de elementos de este array
     @Test
     public void testConversion10(){
         numero = conversionARomanos.conversionNumero(10);
@@ -114,7 +115,8 @@ public class ConversionARomanosTest {
         numero = conversionARomanos.conversionNumero(77);
         Assert.assertEquals("LXXVII", numero);
     }
-
+    //Del test100 al test999 compruebo elementos del array numerosDecenas
+    //También compruebo elementos del array numerosCentenas
     @Test
     public void testConversion100(){
         numero = conversionARomanos.conversionNumero(100);
@@ -174,7 +176,8 @@ public class ConversionARomanosTest {
         numero = conversionARomanos.conversionNumero(999);
         Assert.assertEquals("CMXCIX", numero);
     }
-
+    // Del test1000 al test3000 compruebo los elementos que faltaban del array numerosCentenas
+    // También compruebo los 3 elementos del array numeroMiles
     @Test
     public void testConversion1000(){
         numero = conversionARomanos.conversionNumero(1000);
